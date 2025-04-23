@@ -12,7 +12,7 @@ function Home() {
   console.log(moviesData)
 
   useEffect(() => {
-    fetch('https://mymovyz-backend-three.vercel.app/movies')
+    fetch('https://mymovyz-backend-three.vercel.app/movie')
       .then(response => response.json())
       .then(data => {
         setMoviesData(data.movies);
